@@ -1,0 +1,128 @@
+/* game-style.css */
+
+/* إعدادات أساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8dc; /* لون صحراوي فاتح للخلفية */
+    display: flex;
+    flex-direction: column; /* ترتيب العمود */
+    min-height: 100vh; /* يغطي كامل ارتفاع الشاشة */
+    align-items: center;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    background-color: #f5deb3; /* لون الرمل */
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 700px; /* أعرض البوكس */
+    margin-top: 20px;
+    flex: 1; /* ياخد المساحة المتبقية بين header والfooter */
+}
+
+/* Header */
+header h1 {
+    color: #6b4f1d; /* بني غامق */
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #8b5e3c;
+    font-size: 1.1em;
+}
+
+/* مساحة الصورة */
+#artifact-image-container {
+    margin: 20px 0;
+}
+
+#artifact-image {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 3px solid #6b4f1d;
+    object-fit: cover;
+}
+
+/* الأزرار (اختيارات جنب بعض) */
+#options-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.option-button {
+    flex: 1 1 45%; /* كل زر ياخد تقريبًا نصف المساحة */
+    margin: 10px 5px;
+    padding: 12px 0;
+    background-color: #d2b48c; /* بني فاتح */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.option-button:hover {
+    background-color: #a0522d; /* بني داكن عند المرور بالماوس */
+}
+.option-button.correct {
+    background-color: #4CAF50; /* أخضر */
+    color: white;
+  }
+  
+  .option-button.wrong {
+    background-color: #f44336; /* أحمر */
+    color: white;
+  }
+  
+  .option-button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  
+
+/* لوحة النقاط والمستوى */
+#score-board {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #6b4f1d;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* زرار التالي */
+#next-button {
+    margin-top: 25px;
+    padding: 12px 40px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 12px;
+    background-color: #8b4513;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#next-button:hover {
+    background-color: #5c2e0a;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    color: #8b5e3c;
+    background-color: #f5deb3;
+    padding: 10px 0;
+}
